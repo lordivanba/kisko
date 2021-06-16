@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #57606f;
+    color: #f1f2f6;
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*Navegacion*/
+
+nav{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: #f1f2f6;
+    font-size: 35px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 100px;
+}
+
+.logo img{
+    width: 3rem;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav ul li a{
+    color: #f1f2f6;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #70a1ff;
+    transform: .3s;
+}
+
+/* Home agregados */
+
+.container{
+    width: 95rem;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15rem;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container .card{
+    width: 330px;
+    height: aut;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px ;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-size: 2rem;
+    font-weight: 750;
+    color: #192a56;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1e272e;
+}
+
+.container .card button{
+    width: 7rem;
+    margin: auto;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.title_agregados{
+    text-align: center;
+    font-size: 40px;
+    color: #f1f2f6;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/*Gestion proyectos*/
+
+#alertmessage{
+    font-size: 30px;
+    font-weight: 600;
+    width: 40rem;
+    margin: auto;
+    text-align: center;
+}
+
+#alertmessage svg{
+    width: 3rem;
+    height: auto;
+}
+
+.proyecto_form label{
+    color: #f1f2f6;
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.container_gestion_proyecto{
+    width: 54rem;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.proyecto_form{
+    width: 35rem;
+    height: auto;
+    margin: auto;
+    border: none;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #2f3542;
+    display: block;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.proyecto_form input{
+    color: black;
+    border: none;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.proyecto_form textarea{
+    color: black;
+    margin: auto;
+    margin-top: 5px;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 25rem;
+    font-size: 0.9rem;
+    font-weight: 600;  
+}
+
+.title_gestion_proyectos{
+    text-align: center;
+    font-size: 3rem;
+    color: #f1f2f6;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.title_gestion_proyectos img{
+    width: 4rem;
+}
+
+.proyecto_form button{
+    width: 50%;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    margin: 1rem auto auto auto;
+    font-weight: 500;
+    display: block;   
+}
+
+
+
+.proyecto_table{
+    width: 50rem;
+    height: auto;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.proyecto_table thead{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.proyecto_table tbody{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.proyecto_table a{
+    width: 7rem;
+    margin: 0.2rem;
+    font-size: 1rem;
+    font-weight: 350;
+}
+
+/* */
+
+.container_carreras{
+    margin: auto;
+    width: 85rem;
+    height: 25rem;
+    padding: 8px;
+    border-radius: 10rem;
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+
+.container_carreras img{
+    border-radius: 20rem;
+    border: 1rem solid #2f3542;
+    float: left;
+    width: 30rem;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 15px;
+}
+
+.container_carreras .carreras_text{
+    text-align: justify;
+}
+
+.container_carreras .carreras_text h4{
+    font-size: 3rem;
+    font-weight: 750;
+    margin: 2rem;
+}
+
+.container_carreras .carreras_text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
