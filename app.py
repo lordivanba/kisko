@@ -13,13 +13,32 @@ mysql = MySQL(app)
 # settings
 app.secret_key = 'mysecretkey'
 
+#PAGINAS
 @app.route('/')
 def Index():
     return render_template('index.html')
 
-@app.route('/home')
+@app.route('/index.html')
 def Home():
-    return render_template('index.html')
+    return render_template('index.html')    
+
+@app.route('/proyectos.html')
+def Proyectos():
+    return render_template('proyectos.html')  
+
+@app.route('/divisiones.html')
+def Divisiones():
+    return render_template('divisiones.html')        
+
+@app.route('/acerca.html')
+def Acerca():
+    return render_template('acerca.html')        
+
+@app.route('/login.html')
+def Login():
+    return render_template('login.html') 
+
+#GESTIONES    
 
 @app.route('/gestion_proyectos.html')
 def GestionProyectos():
@@ -28,7 +47,6 @@ def GestionProyectos():
     data = cur.fetchall()
     
     return render_template('gestion_proyectos.html', projects = data)
-
 
 @app.route('/add_project', methods=['POST'])
 def add_project():

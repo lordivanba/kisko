@@ -8,9 +8,8 @@
 
 body{
     width: 100%;
-    height: 100%;
+    height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #57606f;
     color: #f1f2f6;
     background: #C04848;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
@@ -63,17 +62,84 @@ nav ul li a:hover{
     transform: .3s;
 }
 
+/* UTM */
+
+.containerutm{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#imageutm{
+    opacity: 0.5;
+}
+
+.centered {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+
+/* UTM Info*/
+
+.row {
+    display: flex;
+  }
+  
+/* Create two equal columns that sits next to each other */
+.column {
+    margin-left: 1rem;
+    flex: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Mapa */
+
+.title_mapa{
+    text-align: center;
+    font-size: 40px;
+    color: #f1f2f6;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.utm_map{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 0;
+}
+
+#maps{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
+}
+
 /* Home agregados */
 
 .container{
-    width: 95rem;
-    max-width: 1200px;
+    width: 80rem;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    border-radius: 15rem;
+    padding-left: 0rem;
+    border-radius: 3rem;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -81,8 +147,9 @@ nav ul li a:hover{
 
 .container .card{
     width: 330px;
-    height: aut;
-    border-radius: 8px;
+    height: auto;
+    border: none;
+    border-radius: 3rem;
     box-shadow: 0 2px 2px ;
     overflow: hidden;
     margin: 20px;
@@ -110,6 +177,7 @@ nav ul li a:hover{
 }
 
 .container .card p{
+    text-align: justify;
     padding: 0 1rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -130,23 +198,81 @@ nav ul li a:hover{
     font-size: 40px;
     color: #f1f2f6;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 25px;
     font-weight: 500;
+}
+
+
+/* Home carreras */
+
+.container_carreras{
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 85rem;
+    height: 25rem;
+    padding: 8px;
+    border-radius: 3rem;
+    transition: all 0.25s;
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}   
+
+.container_carreras:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0.2);
+}
+
+
+.container_carreras img{
+    border-radius: 4rem;
+    border: 2px solid #2f3542;
+    float: left;
+    width: 30rem;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 15px;
+}
+
+.container_carreras .carreras_text{
+    text-align: justify;
+}
+
+.container_carreras .carreras_text h4{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 750;
+    margin: 2rem;
+}
+
+.container_carreras .carreras_text p{
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container_carreras button{
+    width: 15rem;
+    margin: auto;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /*Gestion proyectos*/
 
 #alertmessage{
-    font-size: 30px;
+    font-size: 1rem;
     font-weight: 600;
-    width: 40rem;
+    width: 30rem;
     margin: auto;
     text-align: center;
 }
 
 #alertmessage svg{
-    width: 3rem;
+    width: 1rem;
     height: auto;
 }
 
@@ -254,43 +380,6 @@ nav ul li a:hover{
     font-weight: 350;
 }
 
-/* */
-
-.container_carreras{
-    margin: auto;
-    width: 85rem;
-    height: 25rem;
-    padding: 8px;
-    border-radius: 10rem;
-    background: #1D976C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}    
-
-.container_carreras img{
-    border-radius: 20rem;
-    border: 1rem solid #2f3542;
-    float: left;
-    width: 30rem;
-    height: auto;
-    padding: 0 0 0 0;
-    margin: 15px;
-}
-
-.container_carreras .carreras_text{
-    text-align: justify;
-}
-
-.container_carreras .carreras_text h4{
-    font-size: 3rem;
-    font-weight: 750;
-    margin: 2rem;
-}
-
-.container_carreras .carreras_text p{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
 
 
 

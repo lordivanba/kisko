@@ -2,7 +2,7 @@
 
 {% block body %}
 <section class="container_gestion_proyecto">
-    <div class="card card-body">
+    <div>
         <form class="proyecto_form" action="/update_project/{{project.0}}" method="POST">
     
             <div class="form-group">
@@ -15,7 +15,7 @@
                 <textarea class="form-control" name="description" id="description" cols="30" rows="10">{{project.2}}</textarea>
             </div>      
             
-            <button type="submit" class="btn btn-dark">Guardar</button>
+            <button type="submit" class="btn btn-success">Guardar</button>
         </form>
     </div>
 </section>
