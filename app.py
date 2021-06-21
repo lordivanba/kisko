@@ -38,6 +38,23 @@ def Acerca():
 def Login():
     return render_template('login.html') 
 
+@app.route('/tecnologias.html')
+def Tecnologias():
+    return render_template('tecnologias.html') 
+
+@app.route('/industrial.html')
+def Industrial():
+    return render_template('industrial.html') 
+
+@app.route('/administracion.html')
+def Administracion():
+    return render_template('administracion.html') 
+
+@app.route('/innovacion.html')
+def Innovacion():
+    return render_template('innovacion.html') 
+
+
 #GESTIONES    
 
 @app.route('/gestion_proyectos.html')

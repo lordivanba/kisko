@@ -33,21 +33,21 @@
         <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
         <h4>Proyecto A</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto atque id voluptatum sapiente minima dicta libero suscipit quam earum labore exercitationem, culpa cumque, voluptas ex? Quae obcaecati asperiores dolores quasi.</p>
-        <button class="btn btn-dark" onclick="" >Ver mas</button>
+        <button id="btnProyectos" class="btn btn-dark">Ver mas</button>
     </div>
     
     <div class="card">
         <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
         <h4>Proyecto B</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto atque id voluptatum sapiente minima dicta libero suscipit quam earum labore exercitationem, culpa cumque, voluptas ex? Quae obcaecati asperiores dolores quasi.</p>
-        <button class="btn btn-dark">Ver más</button>
+        <button id="btnProyectos" class="btn btn-dark">Ver más</button>
     </div>
 
     <div class="card">
          <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
         <h4>Proyecto C</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto atque id voluptatum sapiente minima dicta libero suscipit quam earum labore exercitationem, culpa cumque, voluptas ex? Quae obcaecati asperiores dolores quasi.</p>
-        <button class="btn btn-dark">Ver mas</button>
+        <button id="btnProyectos" class="btn btn-dark">Ver mas</button>
     </div>
 </div>
 
@@ -73,6 +73,10 @@
 <script type="text/javascript">
     document.getElementById("btnCarreras").onclick = function () {
         location.href = "divisiones.html";
-    };   
+    };
+    
+    document.getElementById("btnProyectos").onclick = function () {
+        location.href = "proyectos.html";
+    };
 </script>
 {% endblock %}
