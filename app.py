@@ -38,6 +38,10 @@ def Acerca():
 def Login():
     return render_template('login.html') 
 
+@app.route('/register.html')
+def RegisterUser():
+    return render_template('register.html') 
+
 @app.route('/tecnologias.html')
 def Tecnologias():
     return render_template('tecnologias.html') 
@@ -56,6 +60,13 @@ def Innovacion():
 
 
 #GESTIONES    
+@app.route('/gestiones.html')
+def Gestiones():
+    return render_template('gestiones.html') 
+
+@app.route('/gestion_carreras.html')
+def GestionCarreras():
+    return render_template('gestion_carreras.html') 
 
 @app.route('/gestion_proyectos.html')
 def GestionProyectos():

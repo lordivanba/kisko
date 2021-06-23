@@ -440,15 +440,26 @@ nav ul li a:hover{
     border-radius: 2rem;
     color: #2f3542;
     display: block;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2f3542;
 }
 
 .proyecto_form input{
     color: black;
     border: none;
     margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.proyecto_form select{
+    color: black;
+    border: none;
+    margin: auto;
+    margin-bottom: 5px;
     padding: 1rem;
     border-radius: 1rem;
     width: 25rem;
@@ -518,6 +529,132 @@ nav ul li a:hover{
     font-weight: 350;
 }
 
+/* Login */
 
+.container_login{
+    width: 100%;
+    padding: 15px;
+}
 
+.login_form{
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+.login_form h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+.container_login input[type="text"],
+.container_login input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-container_login{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.container_login i{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.container_login .button_login{
+    border: none;
+    width: 100%;
+    color:white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_login .button_login a{
+    color: white;
+    text-decoration: none;
+}
+
+.container_login .button_login:hover{
+    background: cadetblue;
+}
+
+.container_login p{
+    color: black;
+    text-align: center;
+}
+.container_login .link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.container_login .link:hover{
+    color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .login_form{
+        margin:auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+/*GESTIONES*/
+.title_gestiones{
+    text-align: center;
+    font-size: 3rem;
+    color: #f1f2f6;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.container_gestiones{
+    width: 110rem;
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container_gestion{
+    padding: 2rem;
+    border-radius: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background: #2f3542;
+}
+
+.container_gestion h5{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container_gestion p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container_gestiones img{
+    border-radius: 2rem;
+    width: 25rem;
+    height: auto;
+}
+
+.container_gestion button{
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+/* */
 

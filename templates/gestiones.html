@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1 class="title_gestiones">GESTIONES</h1>
+<main class="container_gestiones">
+    <div class="d-flex position-relative container_gestion">
+        <img src="https://images.pexels.com/photos/4126743/pexels-photo-4126743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="flex-shrink-0 me-3" alt="...">
+        <div>
+          <h5 class="mt-0">Carreras</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate velit similique nisi cum harum. Nostrum facilis excepturi reiciendis necessitatibus nobis officia, natus vel asperiores expedita iste perspiciatis ut ab autem.</p>
+          <button id="btnGestionCarreras" class="btn btn-primary">Gestionar</button>
+        </div>
+    </div>
+
+    <div class="d-flex position-relative container_gestion">
+        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="flex-shrink-0 me-3" alt="...">
+        <div>
+          <h5 class="mt-0">Proyectos</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque libero quos veritatis eveniet dolorem, cupiditate magni. Mollitia iure aspernatur dolorum recusandae delectus omnis a ea quod, deleniti quibusdam assumenda cum.</p>
+          <button id="btnGestionProyectos" class="btn btn-primary">Gestionar</button>
+        </div>
+    </div>
+</main>
+<script type="text/javascript">
+    document.getElementById("btnGestionCarreras").onclick = function () {
+        location.href = "gestion_carreras.html";
+    };
+    
+    document.getElementById("btnGestionProyectos").onclick = function () {
+        location.href = "gestion_proyectos.html";
+    };
+</script>
+{% endblock %}
