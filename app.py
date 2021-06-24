@@ -26,6 +26,10 @@ def Home():
 def Proyectos():
     return render_template('proyectos.html')  
 
+@app.route('/info_proyecto.html')
+def InfoProyecto():
+    return render_template('info_proyecto.html')  
+
 @app.route('/divisiones.html')
 def Divisiones():
     return render_template('divisiones.html')        
